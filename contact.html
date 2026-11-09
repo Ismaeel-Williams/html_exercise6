@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us and view available appointment times.">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">We're here to help</p>
+      <h1>Contact Us</h1>
+      <p>Send us a message or choose a time that works for you.</p>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Send us a message</h2>
+
+      <form action="#" method="post">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name"
+                 autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"
+                 autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone"
+                 autocomplete="tel" placeholder="e.g. 082 123 4567">
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Choose a subject</option>
+            <option value="general">General enquiry</option>
+            <option value="appointment">Book an appointment</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    <section class="card" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Available appointment times</h2>
+      <p class="section-intro">
+        Choose a day and time, then mention it in your message.
+      </p>
+
+      <div class="table-scroll" role="region"
+           aria-label="Appointment schedule" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>00:00–24:00</td><td>Available</td></tr>
+            <tr><td>Tuesday</td><td>00:00–24:00</td><td>Available</td></tr>
+            <tr><td>Wednesday</td><td>00:00–24:00</td><td>Available</td></tr>
+            <tr><td>Thursday</td><td>00:00–24:00</td><td>Available</td></tr>
+            <tr><td>Friday</td><td>00:00–24:00</td><td>Available</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">We look forward to hearing from you.</div>
+  </footer>
+</body>
+</html>
